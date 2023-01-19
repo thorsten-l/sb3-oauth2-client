@@ -1,4 +1,6 @@
-# sb3-oauth2-client
+# Spring-Boot 3, *OAuth2/OpenID Connect* Client with Thymeleaf
+
+This is program is for demonstration purposes only.
 
 ## First run
 
