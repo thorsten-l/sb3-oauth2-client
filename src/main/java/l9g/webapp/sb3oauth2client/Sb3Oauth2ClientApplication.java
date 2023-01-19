@@ -13,7 +13,7 @@ public class Sb3Oauth2ClientApplication
     use "data/config/" for better integration with docker image build
     by spring-boot maven task 
   
-    ./mvnw spring-boot:build-image
+    mvn spring-boot:build-image
   
     docker run --rm --name sb3-oauth2-client -p 8081:8081 \
       -v `pwd`/data:/workspace/data sb3-oauth2-client:0.0.1-SNAPSHOT
