@@ -1,4 +1,4 @@
-# Spring-Boot 3, *OAuth2/OpenID Connect* Client with Thymeleaf
+# Spring-Boot 3, *OAuth2/OpenID Connect* Client with Thymeleaf and Webjars for Bootstrap 5
 
 This is program is for demonstration purposes only.
 
