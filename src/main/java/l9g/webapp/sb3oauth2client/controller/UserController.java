@@ -1,6 +1,7 @@
 package l9g.webapp.sb3oauth2client.controller;
 
 import java.util.Map;
+import l9g.webapp.sb3oauth2client.config.BuildProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -49,5 +50,11 @@ public class UserController
     @AuthenticationPrincipal OAuth2User principal)
   {
     return ((DefaultOidcUser) principal).getIdToken();
+  }
+
+  @GetMapping("/build-properties")
+  public BuildProperties buildPropertiesGET()
+  {
+    return BuildProperties.getInstance();
   }
 }

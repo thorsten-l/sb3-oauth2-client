@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AppController
 {
-
   @GetMapping("/app")
-  public String getProjects(Model model, @AuthenticationPrincipal OAuth2User principal)
+  public String appGET(Model model, @AuthenticationPrincipal OAuth2User principal)
   {
     model.addAttribute("fullname", ((DefaultOidcUser)principal).getFullName());
     return "app";

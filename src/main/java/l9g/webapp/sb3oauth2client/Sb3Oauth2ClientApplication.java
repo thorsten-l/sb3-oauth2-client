@@ -1,5 +1,6 @@
 package l9g.webapp.sb3oauth2client;
 
+import l9g.webapp.sb3oauth2client.config.BuildProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -38,6 +39,7 @@ public class Sb3Oauth2ClientApplication
   public static void main(String[] args)
   {
     LOGGER.info("START");
+    LOGGER.info("{}", BuildProperties.toFormattedString());
     SpringApplication.run(Sb3Oauth2ClientApplication.class, args);
   }
 }

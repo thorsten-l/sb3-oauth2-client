@@ -5,6 +5,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+sb3-oauth2-client
+sb3-oauth2-client.jar
 rebel.xml
 .rebel.xml.bak
 

@@ -30,6 +30,7 @@ public class ClientSecurityConfig
     http.authorizeHttpRequests(
       authorize -> authorize
         .requestMatchers("/").permitAll()
+        .requestMatchers( new AntPathRequestMatcher("/actuator/**")).permitAll()
         .requestMatchers( new AntPathRequestMatcher("/webjars/**")).permitAll()
         .anyRequest().authenticated())
       .oauth2Login()
