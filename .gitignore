@@ -10,6 +10,10 @@ sb3-oauth2-client.jar
 rebel.xml
 .rebel.xml.bak
 
+data/logs/application*
+data/tomcat/logs/
+data/tomcat/work/
+
 ### STS ###
 .apt_generated
 .classpath
